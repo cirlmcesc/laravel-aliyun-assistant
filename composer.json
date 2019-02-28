@@ -1,0 +1,39 @@
+{
+    "name": "cirlmcesc/laravel-aliyun-assistant",
+    "description": "aliyun assistant for laravel",
+    "license": "MIT",
+    "type": "laravel-package",
+    "keywords": ["laravel", "aliyun", "assistant"],
+    "authors": [
+        {
+            "name": "Cirlmcesc Ma",
+            "email": "cirlmcesc_ma@163.com"
+        }
+    ],
+    "homepage": "https://github.com/cirlmcesc/laravel-mddoc",
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.1",
+        "illuminate/support": "^5.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.6"
+    },
+    "autoload": {
+        "classmap": [],
+        "psr-4": {
+            "Cirlmcesc\\LaravelAliyunAssistant\\": "src/Cirlmcesc/LaravelAliyunAssistant/"
+        },
+        "files": [
+            "src/helpers.php",
+            "src/aliyun-php-sdk/aliyun-php-sdk-core/Config.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cirlmcesc\\LaravelAliyunAssistant\\LaravelAliyunAssistantServiceProvider"
+            ]
+        }
+    }
+}
