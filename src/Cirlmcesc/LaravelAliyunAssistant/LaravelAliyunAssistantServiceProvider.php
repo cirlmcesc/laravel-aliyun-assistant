@@ -3,7 +3,6 @@
 namespace Cirlmcesc\LaravelAliyunAssistant;
 
 use Illuminate\Support\ServiceProvider;
-use Cirlmcesc\LaravelAliyunAssistant\LaravelAliyunAssistant;
 
 
 class LaravelAliyunAssistantServiceProvider extends ServiceProvider
@@ -13,7 +12,7 @@ class LaravelAliyunAssistantServiceProvider extends ServiceProvider
      *
      * @var boolean
      */
-    protected $defer = true;
+    protected $defer = false;
 
     /**
      * Register the service provider.

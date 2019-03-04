@@ -53,6 +53,10 @@ class LaravelAliyunAssistant
         $this->accessKeySecret = config("aliyun.access_key_secret");
         $this->region = config("aliyun.region");
 
+        if (empty($this->accessKeyId) || empty($this->accessKeySecret)) {
+            throw new Exception("aliyun assistant error: no accessKeyId or no accessKeySecret.");
+        }
+
         $this->aliyunclient = $this->initVodClient(
             $this->accessKeyId, $this->accessKeySecret);
     }
