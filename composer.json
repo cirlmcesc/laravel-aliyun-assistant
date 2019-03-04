@@ -25,8 +25,7 @@
             "Cirlmcesc\\LaravelAliyunAssistant\\": "src/Cirlmcesc/LaravelAliyunAssistant/"
         },
         "files": [
-            "src/helpers.php",
-            "src/aliyun-php-sdk/aliyun-php-sdk-core/Config.php"
+            "src/helpers.php"
         ]
     },
     "extra": {

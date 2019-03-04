@@ -24,6 +24,8 @@ class LaravelAliyunAssistantServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__."/../../config/aliyun.php", "aliyun");
 
         $this->app->singleton(LaravelAliyunAssistant::class, function () {
+            include_once __DIR__."/../../aliyun-php-sdk/aliyun-php-sdk-core/Config.php";
+
             return new LaravelAliyunAssistant();
         });
     }
