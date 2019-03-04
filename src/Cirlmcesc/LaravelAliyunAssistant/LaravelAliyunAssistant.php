@@ -1,13 +1,13 @@
 <?php
 
-namespace Cirlmcesc\LarvelAliyunAssistant;
+namespace Cirlmcesc\LaravelAliyunAssistant;
 
 use vod\Request\V20170321 as vod;
 use DefaultProfile;
 use DefaultAcsClient;
 use Exception;
 
-class LarvelAliyunAssistant
+class LaravelAliyunAssistant
 {
     /**
      * accessKeyId variable
