@@ -12,7 +12,7 @@ class LaravelAliyunAssistantServiceProvider extends ServiceProvider
      *
      * @var boolean
      */
-    protected $defer = false;
+    protected $defer = true;
 
     /**
      * Register the service provider.
